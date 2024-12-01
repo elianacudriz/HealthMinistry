@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './formulario.css'
+import './estiloglobal.css'
 
 function FormularioRegistro() {
     const [nombre, setNombre] = useState('');
@@ -47,9 +48,11 @@ function FormularioRegistro() {
     };
   
     return (
+        
       <div className="content">
         <h1 id="registro">Formulario de Registro Seventh Day Health</h1>
-        <h3 >Aquí podrás registrarte para poder acceder a todos los servicios de salud que ofrecemos</h3>
+        <h3 className="centered-text">
+            Aquí podrás registrarte para poder acceder a todos los servicios de salud que ofrecemos</h3>
         <div className="form-container">
           <form id="formulario" onSubmit={handleSubmit}>
             <div className="column-wrapper">
@@ -58,6 +61,7 @@ function FormularioRegistro() {
                 <input
                   type="text"
                   id="nombre"
+                  name="nombre"
                   placeholder="Digite su nombre"
                   value={nombre}
                   onChange={(e) => setNombre(e.target.value)}
@@ -70,6 +74,7 @@ function FormularioRegistro() {
                 <input
                   type="text"
                   id="apellido"
+                  name="apellido"
                   placeholder="Digite sus apellidos"
                   value={apellido}
                   onChange={(e) => setApellido(e.target.value)}
@@ -84,6 +89,7 @@ function FormularioRegistro() {
                 <input
                   type="email"
                   id="correo"
+                  name="correo"
                   placeholder="Digite su correo electrónico"
                   value={correo}
                   onChange={(e) => setCorreo(e.target.value)}
@@ -96,6 +102,7 @@ function FormularioRegistro() {
                 <input
                   type="date"
                   id="date"
+                  name="fecha_nacimiento"
                   value={fechaNacimiento}
                   onChange={(e) => setFechaNacimiento(e.target.value)}
                 />
@@ -109,6 +116,7 @@ function FormularioRegistro() {
                 <input
                   type="password"
                   id="contraseña"
+                  name="contrasena"
                   placeholder="Digite su contraseña"
                   value={contrasena}
                   onChange={(e) => setContrasena(e.target.value)}
