@@ -1,0 +1,102 @@
+/* Contenedor del formulario */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #0A9396;
+  }
+  
+  h3 {
+    text-align: center;
+    color: #777;
+    margin-bottom: 50px;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  input,
+  select,
+  button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  select {
+    appearance: none; /* Elimina el estilo predeterminado del navegador */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"%3e%3cpath d="M6 8l4 4 4-4H6z"%3e%3c/path%3e%3c/svg%3e'); /* Flecha hacia abajo */
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    padding-right: 30px; /* Espacio para la flecha */
+  }
+  
+  /* Estilo cuando el select está en focus */
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    
+  }
+  
+  /* Estilos para el botón */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Estilo para las opciones en el select */
+  option {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+  }
+  
+  /* Estilo general de campos de formulario */
+  input[type="date"] {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  
+  small {
+    display: block;
+    margin-top: 5px;
+    color: red;
+    font-size: 0.875rem;
+  }
+  
+  /* Mensajes de éxito o error */
+  #Exito {
+    color: green;
+    font-weight: bold;
+  }
+  

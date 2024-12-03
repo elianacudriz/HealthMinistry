@@ -38,11 +38,15 @@ function FormularioRegistro() {
         const result = await response.json();
         if (response.ok) {
           alert(result.message);
+          if (result.redirectTo) {
+        window.location.href = result.redirectTo; // Redirect to the login page
+    }
+          
         } else {
           alert('Error: ' + result.error);
         }
       } catch (error) {
-        console.error('Error al enviar el formulario:', error);
+        console.error('Error al enviar el formulario:',error);
         alert('Hubo un problema al registrar el usuario.');
       }
     };
